@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ditto Tecnología</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <h1>Ditto</h1>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#modelos">Modelos</a></li>
+                <li><a href="#preguntas">Preguntas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <Section class="cuerpo" id="inicio">
+            <br>
+            <h2>Tu revista favorita <span style="color: #6779BC     ;">Ditto</span></h2>
+            <br>
+            <p>¡Lo <strong>último</strong> en dispositivos móviles</p>
+            <p>lo encuentras aquí!</p>
+            <button type="submit" class="button">¡Únete ahora!</button>
+        </Section>
+        <br>
+
+        <h3>Los modelos de Teléfonos más recientes: </h3>
+        <aside class="tabla" id="modelos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo</th><th>Precio</th><th>Año</th><th>Enlaces</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>iPhone 15</td>
+                    <td>950$</td>
+                    <td>2023</td>
+                    <td><a target="_blank" class="click" href="https://www.apple.com/es/shop/buy-iphone/iphone-15">COMPRAR</a></td>
+                </tr>
+                <tr>
+                    <td>iPhone 15 Plus</td>
+                    <td>1100$</td>
+                    <td>2023</td>
+                    <td><a target="_blank" class="click" href="https://www.apple.com/es/shop/buy-iphone/iphone-15">COMPRAR</a></td>
+                </tr>
+                <tr>
+                    <td>Xiaomi 13 Ultra</td>
+                    <td>838$</td>
+                    <td>2023</td>
+                    <td><a target="_blank" class="click" href="https://www.mi.com/es/product/xiaomi-13-ultra/">COMPRAR</a></td>
+                  </tr>
+                  <tr>
+                    <td>Asus Phone 7</td>
+                    <td>1000$</td>
+                    <td>2023</td>
+                    <td><a target="_blank" class="click" href="https://estore.asus.com/es/rog-phone-7.html">COMPRAR</a></td>
+                  </tr>
+                
+                    
+                  
+              </table>
+        </aside>
+        
+        <section class="preguntas" id="preguntas">
+            <aside class="contenedor">
+                <h3 class="encabezado">Preguntas Frecuentes</h3>
+                <br>
+                <details>
+                    <summary><strong>¿Quiénes Somos?</strong></summary>
+                    <p>Tú página favorita para enterarte de los últimos modelos para dispositivos moviles.</p>
+                </details>
+                <br>
+                <details>
+                    <summary><strong>¿Qué noticias encontraras aquí?</strong></summary>
+                    <p>Aquí encontrarás todo tipo de noticias acerca de las últimas tecnologías en el mercado movil.</p>
+                </details>
+                <br>
+                <details>
+                    <summary><strong>¿Como contactarnos?</strong></summary>
+                    <p>Puedes contactarnos en las siguientes redes sociales: 
+                        Instagram, Facebook y Twitter
+                    </p>
+                </details>
+            </aside>
+        </section>
+        
+        <footer>
+                 <p>2023</p>
+                 <p>Gabriel Molina</p>
+        </footer>
+       
+    </main>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+
+        body{
+            font-family: Roboto;
+            background-color: #FFF6E8;
+            display: grid;
+            grid-auto-rows: 7rem;
+            grid-template-columns: repeat(auto-fill, minmax(15 rem, 1fr));
+            gap: 1rem;
+        }
+        
+        header{
+            background-color: #6779BC;
+            padding: 5px;
+
+        }
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-weight: bold;
+        }
+
+        .cuerpo{
+            text-align: center;
+            font-size: 50px;
+            padding: 50px;
+        }
+
+        
+        .preguntas{
+            display: flex;
+            justify-content: center;
+            padding: 80px;
+            background-color: #9EADF5;
+            align-items: center;
+        }
+
+     
+        
+        .contenedor{
+            width: 300px;
+        }
+
+        .encabezado{
+            height: 50px;
+            font-size: 25px;
+            color: #ffffff;
+        }
+        .button{
+            background-color: #000;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .click{
+            color: #008986 ;
+            font-weight: bold   ;
+        }
+
+        button:hover {
+            background-color: #54BB88;
+            }
+
+        h3{
+            text-align: center;
+        }
+
+      
+
+        .tabla{
+            margin: 50px auto;
+            width: 600px;
+            padding: 0px;
+        }
+
+
+        table {
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        th,td {
+            padding: 20px;
+            
+        }    
+
+        tr:nth-child(even){ /*Solo agarra los pares empezando desde el 0*/
+            background-color: #9EADF5   ;
+        }
+
+        tr:hover td{
+            background-color: #EEE8A9;
+        }
+
+        thead{
+            background-color: #008986;
+        }
+
+        h1{
+            
+            color: white;
+            font-size: 50px;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 0px 20px;
+            font-size: 20px;
+        }
+
+        a{
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        a:hover{
+            color: rgb(0, 0, 0);
+        }
+
+        footer{
+            padding: 20px;
+            
+            text-align: center;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</body>
+</html>
